@@ -1,0 +1,539 @@
+* {
+   box-sizing: border-box;
+}
+ul, li ,body, div {
+   padding: 0;
+   margin: 0;
+   z-index: 2;
+}
+    
+
+.clearfix:after {
+   display:block; 
+   content:"clear"; 
+   clear:both; 
+   line-height:0;
+   visibility:hidden;
+}
+
+  
+   @font-face {
+    font-family: 'iconfont';  /* project id 438358 */
+   src: url('//at.alicdn.com/t/font_438358_evgeia8jd3oko6r.eot');
+    src: url('//at.alicdn.com/t/font_438358_evgeia8jd3oko6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_438358_evgeia8jd3oko6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_438358_evgeia8jd3oko6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_438358_evgeia8jd3oko6r.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont";
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    padding-left:20px
+}
+li {
+   list-style: none;
+}
+    
+a {
+   text-decoration: none;
+}
+    
+.navigation img {
+   width: 165px;
+   height: 100px;
+}
+    
+.navigation .nav-name {
+  font-size: 20px;      
+  float: left;       
+  color: yellow;     
+  margin-top: 20px;    
+  width: 190px;   
+}
+   
+.navigation ul {    
+  float: right;   
+  width: 700px;  
+  height: 60px;  
+}
+    
+    
+.navigation li {    
+  float: right; 
+  margin: 25px 10px; 
+}
+    
+  
+.navigation li a { 
+  color: #fff; 
+}
+              
+.navigation li a:hover {  
+  color: #13EB25  ; 
+}
+         
+.navigation li a:active {  
+  color: #D4712B; 
+}
+   
+.navigation {  
+  width: 100%; 
+  /* height: 60px;*/   
+  /* border: 1px solid red;*/   
+  background: #808B96;       
+}
+
+      /*轮播*/ 
+.carousel { 
+  position: relative; 
+  width: 100%;  
+  height: 537px;  
+  overflow: hidden;  
+}
+   
+  
+.carousel .ct {  
+  position: absolute;  
+  /*  width: 6830px;*/  
+  overflow: hidden;  
+}
+     
+.carousel .ct>li { 
+  float: left; 
+}
+     
+.carousel .ct img  { 
+  width: 1366px; 
+  height: 537px; 
+}
+       
+.btn {   
+  position: absolute; 
+  background: #6A6564  ;
+  width: 40px;    
+  height: 40px;    
+  border-radius: 50%;   
+  border: 1px solid #6A6564;   
+  text-align: center;   
+  line-height: 38px;  
+  top: 50%; 
+  margin-top: -20px;     
+  z-index: 3;
+}
+      
+.next {   
+  float: right;   
+  right: 20px;        
+}
+     
+.pre {  
+  float: left;
+  left: 20px; 
+}
+    
+    
+.carousel .butten {
+  position: absolute;
+  /*width: 300px;*/
+ /* height: 50px;*/
+ /* border: 1px solid red;*/
+  left: 50%;
+  margin-left: -142px;
+  bottom: 20px;
+  /*text-align: center;*/
+  cursor: pointer;
+}
+
+.carousel .butten>li {
+  float: left;
+  width: 25px;
+  height: 10px;
+  margin: 15px;
+  border: 1px solid #5D646B  ;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel .butten .active {
+  background:#5D646B;
+}
+   
+
+
+
+    /*瀑布流*/
+
+    
+#loadCt{
+    position:relative;
+    margin:0 auto;
+        }
+    
+#loadCt .show h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#loadCt .show p {
+    font-style: italic;
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+ 
+#loadCt .picitem{
+    width: 200px;         
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+}
+
+#loadCt .pic-ct img{
+    width: 190px; 
+    position:relative;
+    left:-6px;
+}
+
+#loadCt .pic-ct h4{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px
+}
+
+#loadCt .pic-ct p{
+    font-size: 12px;
+    color: #777371;
+}
+
+#loadCt .pic-ct{
+    width: 700px;
+    position: relative;
+    margin: 50px auto;
+}
+
+
+#loadCt .pic-ct .hide{
+   display: none;
+}
+
+#load span{
+   display:inline-block;
+   height:50px;
+   width:80px;
+   line-height:50px;
+   border-radius:4px;
+   //padding:5px;
+   background-color:orange;
+   cursor:pointer;
+   //text-align:center;
+}
+
+#load{
+   text-align:center;
+}
+   
+ 
+    
+    
+    /*ABOUT*/
+#about {
+    background: #DAD9CF;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+#about .ct {
+    z-index: 2;
+}
+#about .about-title h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#about .about-title p {
+    font-style: italic;
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#about .about-list-wrap {
+    position: relative;
+}
+#about .about-list:before {
+    content: '';
+    width: 3px;
+    height: 1500px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: -40px;
+    z-index: -2;
+}
+#about .about-list li {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 150px;
+    list-style-type: none;
+}
+#about .about-list li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#about .about-list li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+#about .about-list h2 {
+    letter-spacing: 2px;
+    margin: 10px;
+}
+#about .about-list p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px;
+}
+#about .about-list .about-brief-left {
+    width: 30%;
+    float: left;
+    margin-left: 100px;
+}
+#about .about-list .about-brief-right {
+    width: 30%;
+    float: right;
+    margin-right: 100px;
+}
+#about .about-list .about-list-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    z-index: -1;
+}
+    
+    
+    /*team*/
+#team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+   /* background: #DAD9CF  ;*/
+}
+
+#team .team-title h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#team .team-title > p {
+    font-style: italic;
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#team .team-list {
+    padding-left: 150px;
+}
+#team .team-list > li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+#team .team-list h3 {
+    letter-spacing: 1px;
+    margin: 10px;
+    text-align: center;
+}
+
+#team .team-list p {
+    font-size: 16px;
+    color: #777;
+    margin: 20px;
+    text-align: center;
+}
+
+#team .team-list img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+
+#team .team-list .team-iconfont a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 18px;
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.3px;
+    -moz-osx-font-smoothing: grayscale;
+    padding-left: 10px;
+
+}
+
+#team .team-list .team-iconfont a:hover {
+    background: #fed136;
+    transition: .3s;
+}
+
+#team .team-list .team-iconfont li {
+    display: inline-block;
+    margin: 0 5px;
+}
+    
+    
+    /*contact*/
+#contact {
+    height: 800px;
+    background: url(http://www.92uh.com/uploads/youxi/20170222_2/2017022218253510717.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+#contact .contact-title h2 {
+    margin-top: 80px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #fff;
+}
+
+#contact .contact-title p {
+    font-style: italic;
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#contact .contact-form-short {
+    /*  position: absolute;*/
+    top: 12%;
+    left: 10%;
+    margin-top: 80px;
+    margin-left: 150px;
+    float: left;
+}
+#contact .contact-form-short .form-short {
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+#contact .contact-form-textarea {
+   /* position: absolute;*/
+    
+    margin-right: 100px;
+    float: right;
+    margin-top: 90px;
+}
+
+#contact .contact-form-textarea #message {
+    width: 400px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", SimSun, sans-serif;
+}
+
+#contact .contact-button {
+    /* position: absolute;*/
+    top: 59%;
+    left: 20%;
+    float: left;
+    margin: 0 30px;
+    margin-top: 380px;
+   
+}
+
+#contact .contact-button a {
+    display: inline-block;
+    background: #fed136;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#contact .contact-button a:hover {
+    background: #fec503;
+    transition: .3s;
+}
+
+/*FOOTER*/
+#footer .footers > li {
+    display: inline-block;
+    margin: 10px 60px;
+    padding: 0 20px;
+}
+#footer .footers > li > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+}
+#footer .footers .footers-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+}
+#footer .footers .footers-icon:hover {
+    background: #fed136;
+    transition: .3s;
+}
+#footer .footers .privacy {
+    color: #fed136;
+}
+#footer .footers .privacy:hover {
+    color: #fec503;
+    text-decoration:underline;
+}
+    
+.top {
+  position: fixed;
+  width: 40px;
+  height: 80px;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 15px;
+  background: #5D646B;  
+}
+     
